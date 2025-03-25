@@ -1,0 +1,81 @@
+h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+/* Centrar todo el formulario */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5; /* Fondo suave */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px; /* Para que no sea tan ancho */
+    margin: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Centrar la tabla dentro del formulario */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustar la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Estilizar las celdas */
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Hacer que los inputs se ajusten mejor */
+input, select {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Centrar los radio buttons */
+td label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Ajustar el contenedor de radio buttons */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Mejorar el botón */
+input[type="submit"] {
+    background-color: #6200ea; /* Morado fuerte */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #3700b3; /* Morado oscuro */
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Taller</title>
+    <link rel="stylesheet" href="./css/styleForms2.css">
+
+</head>
+<body>
+    <nav>
+        <h1>Practica de formularios en Tablas</h1>
+    </nav>
+    <main>
+        <h2>FORMULARIO DE INSCRIPCIÓN</h2>
+        <article>
+            <table border="1px">
+                 <caption   caption>CESDE</caption>
+                <tr>
+                    <th>Datos del Estudiante</th>
+                </tr>
+                <tr>
+                    <td>Identificacion*</td>
+                    <td> <form action="">
+                        <input type="text" name="Identificacion" id="Identificacion"required placeholder="Identificacion"></form>
+                    </td>
+                    <td>Fecha de Nacimiento*</td>
+                    <td> <form action="">
+                        <input type="date" name="Nacimiento" id="Nacimiento">
+                        </form>
+                    </td>
+                    <td rowspan="5"> <fieldset>
+                        <legend>Tiempo Libre</legend>
+                        <input type="radio" name="" id=""> Estudio <br>
+                        <input type="radio" name="" id=""> Deporte <br>
+                        <input type="radio" name="" id=""> Musica<br>
+                        <input type="radio" name="" id=""> Video Juegos<br>
+                        <input type="radio" name="" id=""> Redes Sociales<br>
+                    </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apellidos</td>
+                    <td><form action="">
+                        <input type="text" name="Apellidos" id="Apellidos" required placeholder="Apellidos"></form>
+                    </td>
+                    <td>Edad</td>
+                    <td><form action="">
+                        <input type="number" name="Edad" id="Edad" required placeholder="Edad"></form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nombres</td>
+                    <td><form action="">
+                        <input type="text" name="Nombre" id="Nombre" required placeholder="Nombres"></form>
+                    </td>
+                    <td>Mes De Nacimiento</td>
+                    <td><form action="">
+                        <input type="month" name="MesNac" id="MesNac"></form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Correo</td>
+                    <td><form action="">
+                        <input type="email" name="Correo" id="Correo" required placeholder="Correo"></form>
+                    </td>
+                    <td>Genero</td>
+                    <td><form action="">
+                        <input type="radio" name="Genero" id=""> Masculino
+                        <input type="radio" name="Genero" id=""> Femenino
+                    </form></td>
+                </tr>
+                <tr>
+                    <td>Celular</td>
+                    <td><form action="">
+                        <input type="tel" name="Celular" id="Celular" required placeholder="Celular"></form>
+                    </td>
+                    <td>Comuna(*Barrios*)</td>
+                    <td><form action="">
+                        <label for="opciones"></label>
+                        <select name="opciones" id="opcion">
+                            <option value="0">Seleccione una Comuna</option>
+                            <option value="1">Comuna 1 Popular</option>
+                            <option value="2">Comuna 2 Santa Cruz</option>
+                            <option value="3">Comuna 3 Manrique</option>
+                            <option value="4">Comuna 4 Aranjuez</option>
+                            <option value="5">Comuna 5 Castilla</option>
+                            <option value="6">Comuna 6 Doce de Octubre</option>
+                            <option value="7">Comuna 7 Robledo</option>
+                            <option value="8">Comuna 8 Villa Hermosa</option>
+                            <option value="9">Comuna 9 Buenos Aires</option>
+                            <option value="10">Comuna 10 La Candelaria</option>
+                            <option value="11">Comuna 11 Laureles-Estadio</option>
+                            <option value="12">Comuna 12 La America</option>
+                            <option value="13">Comuna 13 San Javier</option>
+                            <option value="14">Comuna 14 Poblado</option>
+                            <option value="15">Comuna 15 Guayabal</option>
+                            <option value="16">Comuna 16 Belen</option>
+                            <option value="17">Comuna 50 San Sebastian de Palmitas</option>
+                            <option value="18">Comuna 60 San Cristobal</option>
+                            <option value="19">Comuna 70 Altavista</option>
+                            <option value="20">Comuna 80 San Antonio de Prado</option>
+                            <option value="21">Comuna 90 Santa Elena</option>
+                        </select></form>
+                    </td>
+                </tr>
+            </table>
+        </article>
+        <article>
+            <h3>***SELECCIONAR LAS MATERIAS DEL SEMESTRE***</h3>
+            <table>
+                <tr>
+                    <th>MATERIAS</th>
+                    <TH>Nro 
+                        <br>Creditos</TH>
+                    <th>Vlr 1 Credito</th>
+                    <th>Subtotal</th>
+                    <th>Horario</th>
+                </tr>
+                <tr>
+                    <td><form action="">
+                        <select name="Opciones2" id="option1">
+                        <option value="0">Elija una opción</option>
+                        <option value="1">Logica de la Programación</option>
+                        <option value="2">Bases de Datos</option>
+                        <option value="3">Introduccion a la Programación</option>
+                        <option value="4">Ingles</option>
+                        </select></form>
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" placeholder="Valor Credito"></td>
+                    <td><input type="text"></td>
+                    <td><form action="">
+                        <select name="opciones3" id="option2">
+                            <option value="0">Elija una opción</option>
+                            <option value="1">Mon-Wed 12-16</option>
+                            <option value="2">Thu-Tues 10-14</option>
+                            <option value="3">Wed-Fri 14-18</option>
+                            <option value="4">Mon-Sat 6-10</option>
+                        </select>
+                    </form></td>
+                </tr>
+                <tr>
+                    <td><form action="">
+                        <select name="Opciones2" id="option1">
+                        <option value="0">Elija una opción</option>
+                        <option value="1">Logica de la Programación</option>
+                        <option value="2">Bases de Datos</option>
+                        <option value="3">Introduccion a la Programación</option>
+                        <option value="4">Ingles</option>
+                        </select></form>
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" placeholder="Valor Credito"></td>
+                    <td><input type="text"></td>
+                    <td><form action="">
+                        <select name="opciones3" id="option2">
+                            <option value="0">Elija una opción</option>
+                            <option value="1">Mon-Wed 12-16</option>
+                            <option value="2">Thu-Tues 10-14</option>
+                            <option value="3">Wed-Fri 14-18</option>
+                            <option value="4">Mon-Sat 6-10</option>
+                        </select>
+                    </form></td>
+                </tr>
+                <tr>
+                    <td><form action="">
+                        <select name="Opciones2" id="option1">
+                        <option value="0">Elija una opción</option>
+                        <option value="1">Logica de la Programación</option>
+                        <option value="2">Bases de Datos</option>
+                        <option value="3">Introduccion a la Programación</option>
+                        <option value="4">Ingles</option>
+                        </select></form>
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" placeholder="Valor Credito"></td>
+                    <td><input type="text"></td>
+                    <td><form action="">
+                        <select name="opciones3" id="option2">
+                            <option value="0">Elija una opción</option>
+                            <option value="1">Mon-Wed 12-16</option>
+                            <option value="2">Thu-Tues 10-14</option>
+                            <option value="3">Wed-Fri 14-18</option>
+                            <option value="4">Mon-Sat 6-10</option>
+                        </select>
+                    </form></td>
+                </tr>
+                <tr>
+                    <td><form action="">
+                        <select name="Opciones2" id="option1">
+                        <option value="0">Elija una opción</option>
+                        <option value="1">Logica de la Programación</option>
+                        <option value="2">Bases de Datos</option>
+                        <option value="3">Introduccion a la Programación</option>
+                        <option value="4">Ingles</option>
+                        </select></form>
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" placeholder="Valor Credito"></td>
+                    <td><input type="text"></td>
+                    <td><form action="">
+                        <select name="opciones3" id="option2">
+                            <option value="0">Elija una opción</option>
+                            <option value="1">Mon-Wed 12-16</option>
+                            <option value="2">Thu-Tues 10-14</option>
+                            <option value="3">Wed-Fri 14-18</option>
+                            <option value="4">Mon-Sat 6-10</option>
+                        </select>
+                    </form></td>
+                </tr>
+                <tr>
+                    <th align="center">****</th>
+                    <th align="center">Nro creditos</th>
+                    <th align="center">****</th>
+                    <th align="center">Total</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="number"></td>
+                    <td></td>
+                    <td><input type="text"></td>
+                    <td></td>
+                </tr>
+            </table>
+        </article>
+        
+        <input type="submit" value="Enviar Datos">
+    </main>
+    <footer>
+        <p>Desarrollador</p>
+        <p>Santiago Luna</p>
+        <p>Correo</p>
+        <p>sluna@cesde.net</p>
+        <p>Telefono</p>
+        <p>3195226257</p>
+    </footer>
+</body>
+</html>
